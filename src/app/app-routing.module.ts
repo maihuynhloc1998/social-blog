@@ -5,7 +5,12 @@ const routes: Routes = [
   {
     path: "login",
     loadComponent: () => import("./core/auth/auth.component").then((m) => m.AuthComponent)
-  }
+  },
+  {
+    path: "register",
+    loadComponent: () =>
+      import("./core/auth/auth.component").then((m) => m.AuthComponent),
+  },
 ];
 
 @NgModule({
